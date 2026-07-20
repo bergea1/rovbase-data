@@ -1,68 +1,67 @@
-# Rovbase — carnivore records for mapping
+# Rovbase — rovdyrregistreringer for kartlegging
 
-Norwegian and Swedish large-carnivore records (lynx, wolverine, bear, wolf, golden eagle),
-enriched with the damage-assessment text that [rovbase.no](https://www.rovbase.no) shows in its
-map tooltip, and shaped for mapping tools.
+Norske og svenske registreringer av store rovdyr (gaupe, jerv, bjørn, ulv, kongeørn),
+beriket med skadevurderingsteksten som [rovbase.no](https://www.rovbase.no) viser i
+kartverktøytipset, og tilrettelagt for kartverktøy.
 
-**Updated daily, automatically.** Rebuilt whenever [Rovbase's GBIF
-dataset](https://ipt.gbif.no/resource?r=rovbase) publishes a new version. Each commit is tagged
-with the GBIF version it came from (`gbif-v1.298`).
+**Oppdateres daglig, automatisk.** Bygges på nytt hver gang [Rovbases GBIF-datasett](https://ipt.gbif.no/resource?r=rovbase) publiserer en ny versjon. Hver commit merkes
+med GBIF-versjonen den kom fra (`gbif-v1.298`).
 
-## Files
+## Filer
 
-| File | Records | For |
+| Fil | Poster | For |
 |---|---|---|
-| `rovbase-no-1y.csv` | ~1,700 | Norway, last 12 months — **best for Datawrapper** |
-| `rovbase-no-5y.csv` | ~10,600 | Norway, last 5 years |
-| `rovbase-no.csv` | ~74,600 | Norway, all time |
-| `rovbase-1y.csv` / `-5y.csv` | ~2,600 / ~16,600 | All countries, windowed |
-| `rovbase.csv` | ~90,100 | Everything |
-| `*.geojson` | — | Same data as GeoJSON (EPSG:4326) for QGIS / Mapshaper / Felt |
-| `versions.jsonl` | — | One line per upstream publish: date, GBIF version, row count, checksum |
+| `rovbase-no-1y.csv` | ~1 700 | Norge, siste 12 måneder — **best for Datawrapper** |
+| `rovbase-no-5y.csv` | ~10 600 | Norge, siste 5 år |
+| `rovbase-no.csv` | ~74 600 | Norge, hele perioden |
+| `rovbase-1y.csv` / `-5y.csv` | ~2 600 / ~16 600 | Alle land, tidsvinduer |
+| `rovbase.csv` | ~90 100 | Alt |
+| `*.geojson` | — | Samme data som GeoJSON (EPSG:4326) for QGIS / Mapshaper / Felt |
+| `versions.jsonl` | — | Én linje per oppstrøms publisering: dato, GBIF-versjon, antall rader, sjekksum |
 
-Time windows are rolling from the day the file was cut, not calendar years.
+Tidsvinduene ruller fra dagen filen ble laget, ikke kalenderår.
 
-## Using it in Datawrapper
+## Bruk i Datawrapper
 
-Datawrapper **symbol maps take CSV with lat/lon columns and do not accept GeoJSON** (GeoJSON is
-only for locator maps, which cap at 500 markers). So point it at a CSV:
+Datawrapper **tar symbolkart med CSV med lat/lon-kolonner og godtar ikke GeoJSON** (GeoJSON er
+kun for lokaliseringskart, som har et tak på 500 markører). Så pek det mot en CSV:
 
 ```
 https://raw.githubusercontent.com/bergea1/rovbase-data/main/rovbase-no-1y.csv
 ```
 
-Link it as an external dataset and the map refreshes as this repo updates. For the larger files,
-turn on *Refine → Symbol shape and size → Group nearby symbols* (hex binning) — an ungrouped
-90k-point map is slow and unreadable.
+Koble det til som et eksternt datasett, så oppdateres kartet etter hvert som dette repoet
+oppdateres. For de større filene, slå på *Refine → Symbol shape and size → Group nearby symbols*
+(heksbinning) — et ugruppert kart med 90k punkter er tregt og uleselig.
 
-## Columns
+## Kolonner
 
-| Column | Notes |
+| Kolonne | Merknader |
 |---|---|
-| `id` | Rovbase catalogue number. `K…` = livestock damage, `M…` = dead carnivore |
-| `lat`, `lon` | WGS84 (EPSG:4326), from the Darwin Core export |
-| `title` | e.g. `Rein skadet av gaupe`, `Død gaupe` |
-| `comment` | Full assessment, e.g. `Ett dyr er  drept. Skaden er undersøkt av SNO. …` |
-| `art` | Carnivore species (Gaupe, Jerv, Bjørn, Ulv, Kongeørn) |
-| `bytte` | Animal damaged (Sau, Rein, Hund, Geit, Storfe). **Empty for `DodeRovdyr`** — a dead carnivore has no prey |
-| `dato`, `aar` | Event date and year — `aar` is handy for filtering/animating |
-| `kommune` | Municipality, suffixed `(N)` Norway, `(S)` Sweden, `(F)` Finland |
-| `funnsted` | Locality |
-| `datatype` | `Rovviltskade` (damage) or `DodeRovdyr` (dead carnivore) |
-| `vurdering` | Assessment: Dokumentert, Antatt sikker, Usikker, Feilmelding |
+| `id` | Rovbase-katalognummer. `K…` = husdyrskade, `M…` = dødt rovdyr |
+| `lat`, `lon` | WGS84 (EPSG:4326), fra Darwin Core-eksporten |
+| `title` | f.eks. `Rein skadet av gaupe`, `Død gaupe` |
+| `comment` | Full vurdering, f.eks. `Ett dyr er  drept. Skaden er undersøkt av SNO. …` |
+| `art` | Rovdyrart (Gaupe, Jerv, Bjørn, Ulv, Kongeørn) |
+| `bytte` | Skadet dyr (Sau, Rein, Hund, Geit, Storfe). **Tomt for `DodeRovdyr`** — et dødt rovdyr har ikke noe bytte |
+| `dato`, `aar` | Hendelsesdato og år — `aar` er praktisk for filtrering/animering |
+| `kommune` | Kommune, med suffiks `(N)` Norge, `(S)` Sverige, `(F)` Finland |
+| `funnsted` | Lokalitet |
+| `datatype` | `Rovviltskade` (skade) eller `DodeRovdyr` (dødt rovdyr) |
+| `vurdering` | Vurdering: Dokumentert, Antatt sikker, Usikker, Feilmelding |
 
-Two quirks worth knowing:
+To særegenheter verdt å kjenne til:
 
-- The double space in `Ett dyr er  drept` is upstream's own — reproduced deliberately so the text
-  matches rovbase.no character-for-character.
-- ~74 records carry an empty `title`/`comment`. They exist in the Darwin Core export but were
-  withdrawn from the live Rovbase API. They're kept so the record set stays complete; they are
-  absent from the `-no*` files, being Swedish.
+- Det doble mellomrommet i `Ett dyr er  drept` er oppstrøms sitt eget — gjengitt bevisst slik at
+  teksten samsvarer med rovbase.no tegn for tegn.
+- ~74 poster har en tom `title`/`comment`. De finnes i Darwin Core-eksporten, men ble trukket
+  tilbake fra det live Rovbase-API-et. De beholdes slik at datasettet forblir komplett; de er
+  fraværende fra `-no*`-filene, siden de er svenske.
 
-## Source and licence
+## Kilde og lisens
 
 Data: [Rovbase](https://www.rovbase.no) / Miljødirektoratet, via
-[GBIF Norway](https://ipt.gbif.no/resource?r=rovbase) (dataset
-`3b45d150-bb41-488d-a438-9e7ffb3c6101`). Check the upstream dataset for licence and citation
-terms before republishing. This repo is a derived convenience copy — please credit Rovbase /
-Miljødirektoratet.
+[GBIF Norge](https://ipt.gbif.no/resource?r=rovbase) (datasett
+`3b45d150-bb41-488d-a438-9e7ffb3c6101`). Sjekk oppstrøms-datasettet for lisens- og
+siteringsvilkår før du republiserer. Dette repoet er en avledet praktisk kopi — vennligst
+krediter Rovbase / Miljødirektoratet.
