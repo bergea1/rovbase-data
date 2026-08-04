@@ -18,3 +18,4 @@
 {"date": "2026-08-01", "fetched_utc": "2026-08-01T14:03:40+00:00", "version": "1.314", "rows": 90376, "sha256": "1309133a73cf52d1bc22beef622a2f04310cbc201a93ad5b1d41e41d5a1f5372"}
 {"date": "2026-08-02", "fetched_utc": "2026-08-02T14:04:13+00:00", "version": "1.315", "rows": 90376, "sha256": "1309133a73cf52d1bc22beef622a2f04310cbc201a93ad5b1d41e41d5a1f5372"}
 {"date": "2026-08-03", "fetched_utc": "2026-08-03T14:17:59+00:00", "version": "1.316", "rows": 90376, "sha256": "1309133a73cf52d1bc22beef622a2f04310cbc201a93ad5b1d41e41d5a1f5372"}
+{"date": "2026-08-04", "fetched_utc": "2026-08-04T14:16:28+00:00", "version": "1.317", "rows": 90376, "sha256": "1309133a73cf52d1bc22beef622a2f04310cbc201a93ad5b1d41e41d5a1f5372"}
