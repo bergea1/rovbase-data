@@ -1,9 +1,6 @@
 id,lat,lon,title,comment,art,bytte,dato,aar,kommune,funnsted,datatype,vurdering
 K517695,62.574964,10.548777,Sau skadet av bjørn,Ett dyr er  skadd og avlivet. Skaden er undersøkt av SNO. Skadeårsaken er dokumentert. Skaden skjedde i utmark.,Bjørn,Sau,2021-08-15,2021,Tynset (N),Veibua,Rovviltskade,Dokumentert
 K517827,61.78178,7.816277,Sau skadet av jerv,Ett dyr er  drept. Skaden er undersøkt av SNO. Skadeårsaken er dokumentert. Skaden skjedde i utmark.,Jerv,Sau,2021-08-18,2021,Skjåk (N),Tundradalen ,Rovviltskade,Dokumentert
-K517618,67.257761,15.525592,Sau skadet av jerv,Ett dyr er  drept. Skaden er undersøkt av SNO. Skadeårsaken er antatt sikker. Skaden skjedde i utmark.,Jerv,Sau,2021-08-11,2021,Fauske - Fuossko (N),Stengvann,Rovviltskade,Antatt sikker
-K517629,64.433761,11.0063,Sau skadet av kongeørn,Ett dyr er  drept. Skaden er undersøkt av SNO. Skadeårsaken er dokumentert. Skaden skjedde i innmark.,Kongeørn,Sau,2021-08-11,2021,Flatanger (N),Fjell,Rovviltskade,Dokumentert
-K517707,65.619744,13.849852,Sau skadet av kongeørn,Ett dyr er  drept. Skaden er undersøkt av SNO. Skadeårsaken er dokumentert. Skaden skjedde i utmark.,Kongeørn,Sau,2021-08-11,2021,Aarborte - Hattfjelldal (N),Kroktjønna,Rovviltskade,Dokumentert
 K517731,60.55864,9.308988,Sau skadet av ulv,Ett dyr er  drept. Skaden er undersøkt av SNO. Skadeårsaken er antatt sikker. Skaden skjedde i utmark.,Ulv,Sau,2021-08-14,2021,Nesbyen (N),Nesbyen  Samfetli,Rovviltskade,Antatt sikker
 K517741,67.299138,15.504206,Sau skadet av jerv,Ett dyr er  drept. Skaden er undersøkt av SNO. Skadeårsaken er dokumentert. Skaden skjedde i utmark.,Jerv,Sau,2021-08-15,2021,Fauske - Fuossko (N),Holtanlia,Rovviltskade,Dokumentert
 K517777,64.067348,12.229672,Sau skadet av bjørn,Ett dyr er  drept. Skaden er undersøkt av SNO. Skadeårsaken er dokumentert. Skaden skjedde i utmark.,Bjørn,Sau,2021-08-17,2021,Snåase - Snåsa (N),Medjåseteren,Rovviltskade,Dokumentert
@@ -10726,7 +10723,6 @@ K520535,68.770035,21.185024,Rein skadet av jerv,Ett dyr er  drept. Skaden er und
 K520661,66.052872,19.48949,Rein skadet av gaupe,Ett dyr er  drept. Skaden er undersøkt av en sameby. Skadeårsaken er dokumentert.,Gaupe,Rein,2022-02-22,2022,Jokkmokk (S),A Loamenoajve,Rovviltskade,Dokumentert
 K517715,61.609236,7.171942,Sau skadet av jerv,Ett dyr er  drept. Rapport ikke kontrollert på stedet. Skadeårsaken er dokumentert. Skaden skjedde i utmark.,Jerv,Sau,2021-08-15,2021,Luster (N),Røykjedalen,Rovviltskade,Dokumentert
 K520662,66.059182,19.512889,Rein skadet av gaupe,Ett dyr er  drept. Skaden er undersøkt av en sameby. Skadeårsaken er dokumentert.,Gaupe,Rein,2022-02-22,2022,Jokkmokk (S),A Loamenoajve,Rovviltskade,Dokumentert
-K518455,61.607083,7.225918,Sau skadet av jerv,Ett dyr er  drept. Rapport ikke kontrollert på stedet. Skadeårsaken er usikker. Skaden skjedde i utmark.,Jerv,Sau,2021-08-11,2021,Luster (N),Bakkedalen,Rovviltskade,Usikker
 K518461,61.617112,7.213078,Sau skadet av jerv,Ett dyr er  drept. Rapport ikke kontrollert på stedet. Skadeårsaken er dokumentert. Skaden skjedde i utmark.,Jerv,Sau,2021-09-03,2021,Luster (N),Røykjedalen,Rovviltskade,Dokumentert
 K518905,61.618936,7.159564,Sau skadet av jerv,Ett dyr er  drept. Rapport ikke kontrollert på stedet. Skadeårsaken er dokumentert. Skaden skjedde i utmark.,Jerv,Sau,2021-09-09,2021,Luster (N),Røykjedalen,Rovviltskade,Dokumentert
 K519079,62.420185,10.608245,Sau skadet av bjørn,Ett dyr er  drept. Rapport ikke kontrollert på stedet. Skadeårsaken er usikker. Skaden skjedde i utmark.,Bjørn,Sau,2021-09-17,2021,Tynset (N),Storåsen,Rovviltskade,Usikker
